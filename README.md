@@ -1,6 +1,6 @@
 # MyFirstToken
 
-This is a simple solidity program written to create a token called MFT. It purpose of the program is to enable the minting of the MFT token and to also give a functionality to burn the token
+This is a simple solidity program written to create a token called MFT. The purpose of the program is to enable the minting of the MFT token and to also give a functionality to burn the token
 
 # Description
 This program is a simple contract written in Solidity programming language which is widely used for developing smart contracts on the Ethereum blockchain .It contains a mint function that recieves an address and the value of the number of the token we want minted.It also contains a  burn function which also recieves same parameters as the mint function,but it however burn the recieved value from the total supply if the value do not exceed the total supply.
@@ -14,7 +14,7 @@ Once on the Remix website, ensure to create a new file by clicking on the "+" ic
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.26;
 
-
+ 
 contract MyToken {
     // public variables here
     string public tokenName = "MyFirstToken";
