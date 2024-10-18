@@ -14,16 +14,15 @@ Once on the Remix website, ensure to create a new file by clicking on the "+" ic
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.26;
 
- 
 contract MyToken {
     // public variables here
     string public tokenName = "MyFirstToken";
     string public tokenAbrv = "MFT";
     uint256 public totalSupply = 0;
     // mapping variable here
-    mapping(address => uint256) public balances;
+    mapping(address => uint256) public balances; 
 
-    // mint function
+        // mint function
     function mint(address _address, uint256 _value) public {
         totalSupply += _value;
         balances[_address] += _value;
@@ -37,6 +36,8 @@ contract MyToken {
         }
     }
 }
+
+
 
 
 Next, ensure you compile the code by clicking on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile MyFirstToken.sol" button.
