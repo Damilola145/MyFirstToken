@@ -11,10 +11,11 @@ This program is a simple contract written in Solidity programming language which
 To run this program,  go to the Remix website at https://remix.ethereum.org/. which is an online Solidity IDE.
 Once on the Remix website, ensure to create a new file by clicking on the "+" icon at the left-hand sidebar. Proceed to Save the file with a .sol extension (e.g., MyFirstToken.sol). Copy and paste the following code into the file:
 
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.26;
+    // SPDX-License-Identifier: MIT
+     pragma solidity 0.8.26;
 
-contract MyToken {
+    contract MyToken{
+
     // public variables here
     string public tokenName = "MyFirstToken";
     string public tokenAbrv = "MFT";
@@ -34,8 +35,8 @@ contract MyToken {
         totalSupply -= _value;
         balances[_address] -= _value;
         }
+    } 
     }
-}
 
 
 
